@@ -1,6 +1,6 @@
  // listen to the form submission
  document
- .getElementById("contact-form")
+ .getElementById("form-group")
  .addEventListener("submit", function (event) {
    event.preventDefault();
 
