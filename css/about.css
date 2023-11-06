@@ -1,5 +1,5 @@
 * {
-    font-family: Nunito, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
   
   .responsive-cell-block {
@@ -149,5 +149,9 @@
   @media (max-width:370px){
     .responsive-container-block{
       width: 100%;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 15px;
+      margin-left: 0px;
     }
   }

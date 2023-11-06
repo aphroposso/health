@@ -1,7 +1,7 @@
 
 
 :root {
-    --blue: #007bff;
+    --blue: #1A76D1;
     --indigo: #6610f2;
     --purple: #6f42c1;
     --pink: #e83e8c;
@@ -2428,7 +2428,7 @@ fieldset[disabled] a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #007bff;
+    background-color: #1A76D1;
     border-color: #007bff
 }
 
@@ -2524,7 +2524,7 @@ fieldset[disabled] a.btn {
 
 .btn-info {
     color: #fff;
-    background-color: #17a2b8;
+    background-color: #1A76D1;
     border-color: #17a2b8
 }
 

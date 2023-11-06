@@ -1,9 +1,6 @@
 /**************************************
 
     File Name: colors.css
-    Template Name: Tech Blog
-    Created By: HTML.Design
-    http://themeforest.net/user/wpdestek
 
 **************************************/
 
@@ -24,7 +21,7 @@ a:focus,
 .navbar-inverse .navbar-nav .nav-link.active,
 .navbar-inverse .navbar-nav .nav-link.open,
 .navbar-inverse .navbar-nav .open > .nav-link {
-    color: #3197d6 !important;
+    color:  #1A76D1 !important;
 }
 
 .dmtop,
@@ -32,7 +29,7 @@ a:focus,
 .search-form .btn:focus,
 .search-form .btn {
     color: #ffffff !important;
-    background-color: #3197d6 !important;
+    background-color:  #1A76D1 !important;
 }
 
 .tag-cloud-single span,
@@ -42,15 +39,13 @@ a:focus,
 .btn:focus,
 .navbar-inverse .navbar-toggler {
     color: #ffffff !important;
-    background-color: #3197d6;
-}
-
+    background-color:  #1A76D1;
 .blockquote {
-    border-left-color: #3197d6;
+    border-left-color:  #1A76D1;
 }
 
 .footer .widget-title {
-    border-color: #3197d6;
+    border-color:  #1A76D1;
 }
 
 
@@ -73,13 +68,13 @@ a:focus,
 .navbar-nav .nav-link.active.color-aqua-hover,
 .navbar-nav .nav-link.color-aqua-hover:hover,
 .navbar-nav .nav-link.color-aqua-hover:focus {
-    color: #2ad2c9 !important;
+    color: #1A76D1 !important;
 }
 
 .page-title .bg-aqua,
 .masonry-box:hover .blog-meta span.bg-aqua,
 .color-aqua a {
-    background-color: #2ad2c9 !important;
+    background-color:#1A76D1 !important;
 }
 
 .navbar-nav .nav-link.active.color-green-hover,
@@ -171,4 +166,5 @@ a:focus,
 
 .footer.wb .btn {
     color: rgba(255, 255, 255, 1) !important;
+}
 }

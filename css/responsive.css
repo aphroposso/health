@@ -145,7 +145,7 @@
 	top:0;
 	height:100%;
 	width:100%;
-	background:#030e5c;
+	background:#000000;
 	opacity:0.5;
 }
 .slider .single-slider h1 {
@@ -207,11 +207,11 @@
 .appointment .appointment-image{
 	margin-top:20px;
 }
-.call-action .content {
+.call-action .call {
 	padding: 0;
 	padding: 70px 0;
 }
-.call-action .content h2 {
+.call-action .call h2 {
 	font-size: 28px;
 	line-height: 40px;
 }
@@ -587,7 +587,7 @@
 	top:0;
 	height:100%;
 	width:100%;
-	background:#030e5c;
+	background:#000000;
 	opacity:0.5;
 }
 .slider .single-slider h1 {
@@ -657,11 +657,11 @@
 	height: 350px;
 	margin-top: 30px;
 }
-.call-action .content {
+.call-action .call {
 	padding: 0;
 	padding: 70px 0;
 }
-.call-action .content h2 {
+.call-action .call h2 {
 	font-size: 28px;
 	line-height: 40px;
 }
@@ -1075,7 +1075,7 @@
 	top:0;
 	height:100%;
 	width:100%;
-	background:#061166;
+	background:#000000;
 	opacity:0.5;
 }
 .slider .single-slider h1 {
@@ -1147,11 +1147,11 @@
 	height: 350px;
 	margin-top: 30px;
 }
-.call-action .content {
+.call-action .call {
 	padding: 0;
 	padding: 70px 0;
 }
-.call-action .content h2 {
+.call-action .call h2 {
 	font-size: 28px;
 	line-height: 40px;
 }

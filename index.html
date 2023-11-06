@@ -48,6 +48,8 @@
         <link rel="stylesheet" href="css/animate.min.css">
 		<!-- Magnific Popup CSS -->
         <link rel="stylesheet" href="css/magnific-popup.css">
+		<!--accordion-->
+		<link rel="stylesheet" href="css/accordion.css">
 		
 		<!-- Medipro CSS -->
         <link rel="stylesheet" href="css/normalize.css">
@@ -81,17 +83,9 @@
 						<div class="col-lg-6 col-md-5 col-12">
 							<!-- Contact -->
 							<ul class="top-link">
-								<li ><b>“Better health aspirers, better future achievers”</b></li>
+								<li ></b> “Better health aspirers, better future achievers”</b></li>
 							</ul>
 							<!-- End Contact -->
-						</div>
-						<div id="phone" class="col-lg-6 col-md-7 col-12">
-							<!-- Top Contact -->
-							<ul class="top-contact">
-								<li><i class="fa fa-phone"></i><a href="tel:0784343073">+250 784 343 073</a></li>
-								<li><i class="fa fa-envelope"></i><a href="mailto:urphs.association@gmail.com">urphs.association@gmail.com</a></li>
-							</ul>
-							<!-- End Top Contact -->
 						</div>
 					</div>
 				</div>
@@ -148,7 +142,7 @@
 						<div class="row">
 							<div class="col-lg-7">
 								<div class="text">
-									<h1>UR- <span>Public Health</span> Students Association</h1>
+									<h1>UR-<span>Public Health</span> Students Association</h1>
 									<p> Students Association aimed at Preventing diseases, Promoting health, and Prolonging Life by Using Different
 										PPublic health approaches </p>
 									<div class="button">
@@ -327,6 +321,47 @@
 				</div>
 			</div>
 		</section>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+	<input type="radio" id="radioYour Account" name="accordion" checked="checked"/>
+	<label class="item" for="radioYour Account">
+	  <div class="title">MISSION</div>
+	  <div class="content">The URPHSA will provide practical, extra-curricular skills, experience and connections to 
+		student members in the field of public health with purpose to increase their employment 
+		chances after graduation. As a youth association it will also contribute to the achievement of 
+		the global sustainable development goals (SDGs) in Rwanda.</div>
+	</label>
+	<input type="radio" id="radioPayment &amp; Pricing" name="accordion"/>
+	<label class="item" for="radioPayment &amp; Pricing">
+	  <div class="title">VISION</div>
+	  <div class="content"><ul class="time-sidual">
+		<li><i class="icofont-check-circled"></i>To contribute to the production of skilful graduates in the public health field and reduction of 
+			unemployment rate in Rwanda</li>
+		<li><i class="icofont-check-circled"></i>To boost the achievement of SDGs in Rwanda</li>
+</ul></div>
+	</label>
+	<input type="radio" id="radioReturns &amp; Refunds" name="accordion"/>
+	<label class="item" for="radioReturns &amp; Refunds">
+	  <div class="title">OBJECTIVES</div>
+	  <div class="content"><ul class="time-sidual">
+		<li><i class="icofont-check-circled"></i>Enhance and sustain full understanding and experience in the field of public health of 
+			student members during their time at university.</li>
+		<li><i class="icofont-check-circled"></i>To provide practical, leadership and management, communication, entrepreneurship, 
+			research and presentation, networking, problem solving, team work, and time 
+			management skills during time at the university.</li>
+		<li><i class="icofont-check-circled"></i>To enhance networking of students in school of public health with potential employers, 
+			other students organizations during their academic years. </li>
+		<li><i class="icofont-check-circled"></i>To contribute to the achievement of SDGs in Rwanda through working with other 
+			organizations in the field of public health.</li>
+</ul></div>
+	</label>
+	<input type="radio" id="radioShipping &amp; Pickup" name="accordion"/>
+	<label class="item" for="radioShipping &amp; Pickup">
+	  <div class="title">MOTTO</div>
+	  <div class="content"> “Better health aspirers, better future achievers”</div>
+	</label>
+  </div>
+  <!-- partial -->
 		<!--/ End Why choose -->
 		
 		<!-- Start Call to action -->
@@ -334,7 +369,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-12">
-						<div class="content">
+						<div class="call">
 							<h2>Do you want to Donate for cause? Call @+250 784 343 073</h2>
 							<p>UR_PHSA is driven by the passion of tackling NCDs and Communicable Diseases, SRHR, Nutrition, and Encironmental and Wash issues through supporting community, to have access to life awareness and services on Above issues.</p>
 							<div class="button">
@@ -441,68 +476,49 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-6 col-md-12 col-12">
-						<form id="contact-form" action="/contact" method="post">
+						<!-- Form -->
+						<form id="contact-form" class="form" method="post" action="/contact">
 							<div class="row">
-								<div class="col-lg-6 col-md-6 col-12">
+								<div class="col-lg-6">
 									<div class="form-group">
-										<label for="name"></label>
-										<input name="name" id="name" type="text" placeholder="Names" required>
+										<label for="name">NAMES:</label>
+										<input type="text" name="name" placeholder="write your NameS" required="">
 									</div>
 								</div>
-								<div class="col-lg-6 col-md-6 col-12">
+								<div class="col-lg-6">
 									<div class="form-group">
-										<label for="email"></label>
-										<input name="email" id="email" type="email" placeholder="Email" required>
+										<label for="email">EMAIL:</label>
+										<input type="email" name="email" placeholder="write your Email" required="">
 									</div>
 								</div>
-								<div class="col-lg-6 col-md-6 col-12">
+								<div class="col-lg-6">
 									<div class="form-group">
-										<label for="phone"></label>
-										<input name="phone" id="phone" type="text" placeholder="Phone Number" >
+										<label for="phone">PHONE NUMBER:</label>
+										<input type="number" name="phone" placeholder="Phone" required="">
 									</div>
 								</div>
-								<div class="col-lg-6 col-md-6 col-12">
+								<div class="col-lg-6">
 									<div class="form-group">
-										<div class="nice-select form-control wide" tabindex="0"><span class="current">Area of interest</span>
-											<ul class="list">
-												<li data-value="1" class="option selected ">Prevention And Control Of NCDs</li>
-												<li data-value="2" class="option">Sexual Reproductive Health And Right,SRHR</li>
-												<li data-value="3" class="option">Wash and Environment Program</li>
-												<li data-value="4" class="option">Nutrition Program.</li>
-											</ul>
-										</div>
+										<label for="occupation">OCCUPATION</label>
+										<input type="text" name="subject" placeholder="your occcupation" required="">
 									</div>
 								</div>
-						<div class="col-lg-6 col-md-6 col-12">
+								<div class="col-lg-12">
 									<div class="form-group">
-										<label for="occupation"></label>
-										<input name="occupation" id="occupation" placeholder="Occupation" type="text">
+										<label for="message">MESSAGE:</label>
+										<textarea name="message" placeholder="Your Message" required=""></textarea>
 									</div>
 								</div>
-								<div class="col-lg-6 col-md-6 col-12">
-									<div class="form-group">
-										<input type="text" placeholder="Date" id="datepicker">
+								<div class="col-12">
+									<div class="form-group login-btn">
+										<input type="submit" value="Send" class="btn">
 									</div>
-								</div>
-								<div class="col-lg-12 col-md-12 col-12">
-									<div class="form-group">
-										<textarea name="message" placeholder="Write Your Message Here....."></textarea>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-5 col-md-4 col-12">
-									<div class="form-group">
-										<div class="button">
-											<button type="submit" class="btn">Send Your Response</button>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-7 col-md-8 col-12">
-									<p>( We will be confirm by an Text Message )</p>
 								</div>
 							</div>
 						</form>
+						<p style="color: red" id="error-message"></p>
+                                <p style="color: #fff" id="success-message"></p>
+						<!--/ End Form -->
 					</div>
 					<div class="col-lg-6 col-md-12 ">
 						<div class="appointment-image">
@@ -667,6 +683,7 @@
 		<!--subscribe-->
 		<script src="js/subscribe.js"></script>
 		<!--contacts-->
-		<script src="contact.html"></script>
+		<script src="js/contact.js"></script>
+		<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     </body>
 </html>

@@ -52,7 +52,7 @@ body{
     font-family: 'Poppins', sans-serif;
 	font-weight: 400;
 	font-size:14px;
-	color:#888;
+	color:#383636;
 }
 .load{
 	background: var(--bg);
@@ -914,7 +914,7 @@ PopUp Style
 	top:0;
 	height:100%;
 	width:100%;
-	background:#061166;
+	background:#000000;
 	opacity:0.5;
 }
 .slider .single-slider .text{
@@ -1403,53 +1403,53 @@ PopUp Style
 	position:relative;
 	background-repeat:no-repeat;
 }
-.call-action .content{
+.call-action .call{
 	text-align:center;
 	padding:100px 265px;
 }
-.call-action .content h2{
+.call-action .call h2{
 	color:#fff;
 	font-size:32px;
 	font-weight:600;
 	line-height:46px;
 }
-.call-action .content p {
+.call-action .call p {
 	color: #fff;
 	margin: 30px 0px;
 	font-size: 15px;
 }
-.call-action .content .btn{
+.call-action .call .btn{
 	background:#fff;
 	margin-right:20px;
 	font-weight:500;
 	border:1px solid #fff;
 	color:#1a76d1;
 }
-.call-action .content .btn:before{
+.call-action .call .btn:before{
 	background:#1A76D1;
 }
-.call-action .content .btn:hover{
+.call-action .call .btn:hover{
 	background:#1A76D1;
 	color:#fff;
 }
-.call-action .content .btn:last-child{
+.call-action .call .btn:last-child{
 	margin-right:0px;
 }
-.call-action .content .second {
+.call-action .call .second {
 	border: 1px solid #fff;
 	color: #fff;
 	background: transparent;
 	color: #fff !important;
 }
-.call-action .content .second:before{
+.call-action .call .second:before{
 	background:#fff;
 }
-.call-action .content .second:hover{
+.call-action .call .second:hover{
 	color:#1A76D1;
 	border-color:transparent;
 	background:#fff;
 }
-.call-action .content .second i{
+.call-action .call .second i{
 	margin-left:10px;
 }
 /*===============================
@@ -3026,13 +3026,14 @@ PopUp Style
 	background: #1A76D1;
 }
 .appointment .appointment-image{}
-.appointment.single-page .button .btn{
+.appointment.single-page  .btn{
 	width:100%;
+	background-color: #1A76D1;
 }
-.appointment .button .btn{
+.appointment  .btn{
 	font-weight:500;
 }
-.appointment .button .btn:hover{
+.appointment .btn:hover{
 	color:#fff;
 }
 .appointment .form p{
