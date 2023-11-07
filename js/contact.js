@@ -1,18 +1,16 @@
 
-
 document.getElementById("contact-form").addEventListener("submit", function (event) {
   event.preventDefault();
 
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const phone = document.getElementById("phone").value;
-  const subject = document.getElementById("occupation").value;
+  const occupation = document.getElementById("occupation").value; // Change 'subject' to 'occupation'
   const message = document.getElementById("message").value;
 
   // Check if the phone number starts with "078" and has a total length of 10
   if (phone.startsWith("078") && phone.length === 10) {
-      // Send the email using EmailJS (replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID')
-      emailjs.send('service_ky7cpsc', 'template_ndnn34j', {
+      emailjs.send('service_ky7cpsc', 'template_ndnn34j', { 
         name: name,
         email: email,
         phone: phone,
