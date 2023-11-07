@@ -1,11 +1,6 @@
 const API_KEY = "YBxrVYBVLNbIEVu4Qgo1ag";
 const FORM_ID = "5693494";
 
-// Function to set loading state
-function setLoading(isLoading) {
-  // You can implement loading UI changes here if needed
-}
-
 // Function to set success message
 function setSuccessMessage(message) {
   const successMessage = document.getElementById("success-message");
