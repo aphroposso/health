@@ -1,28 +1,28 @@
-const API_KEY = "YBxrVYBVLNbIEVu4Qgo1ag";
-const FORM_ID = "5693494";
 
-setLoading(true);
+  (function () {
+    var form = document.querySelector('.newsletter-inner');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var email = form.querySelector('[name="EMAIL"]').value;
+      var data = {
+        email: email,
+      };
 
-axios.post(`https://api.convertkit.com/v3/forms/${FORM_ID}/subscribe`, {
-  api_key: API_KEY,
-  email,
-})
-.then(response => {
-  console.log("Email sent successfully!");
-  setEmail(""); // Resetting the email input field after successful submission
-  setLoading(false);
-  setSubscribed(true);
-
-  setTimeout(() => {
-    setSubscribed(false);
-  }, 3000);
-})
-.catch(error => {
-  console.error("Error sending email:", error);
-  setErrorMessage("Error occurred. Please try again!");
-  setLoading(false);
-
-  setTimeout(() => {
-    setErrorMessage("");
-  }, 3000);
-});
+      fetch('https://api.convertkit.com/v3/forms/${5693494}/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+        .then(function () {
+          // Subscription successful
+          alert('Thank you for subscribing!');
+          form.reset(); // Clear the form
+        })
+        .catch(function (error) {
+          // Handle the error
+          console.error('Subscription failed:', error);
+        });
+    });
+  })();
