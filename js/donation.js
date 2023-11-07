@@ -3,7 +3,7 @@ document.getElementById('convertkit-form').addEventListener('submit', function(e
 
   const emailInput = document.querySelector('.subscribe__input');
   const formId = '5693494'; // Replace with your actual ConvertKit form ID
-  const apiKey = 'P0oWAiAmJiX_vkmZRgK8aw'; // Replace with your ConvertKit API key
+  const apiKey = 'YBxrVYBVLNbIEVu4Qgo1ag'; // Replace with your ConvertKit API key
 
   // Remove capitalized Gmail and .com
   let email = emailInput.value.toLowerCase(); // Convert to lowercase
@@ -16,7 +16,7 @@ document.getElementById('convertkit-form').addEventListener('submit', function(e
       tags: [], // You can add tags if needed
   };
 
-  fetch(`https://app.convertkit.com/forms/designers/5693494/edit`, {
+  fetch(`https://api.convertkit.com/v3/forms/${FORM_ID}/subscribe`, {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json',
