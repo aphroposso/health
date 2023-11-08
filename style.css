@@ -2442,13 +2442,13 @@ PopUp Style
 	height: 80px;
 	margin-right: 20px;
 }
-.main-sidebar .single-post .content{
+.main-sidebar .single-post .post-content{
 	padding-left:100px;
 }
-.main-sidebar .single-post .content h5 {
+.main-sidebar .single-post .post-content h5 {
 	line-height: 18px;
 }
-.main-sidebar .single-post .content h5 a {
+.main-sidebar .single-post .post-content h5 a {
 	color: #2C2D3F;
 	font-weight: 500;
 	font-size: 14px;
@@ -2458,20 +2458,20 @@ PopUp Style
 	margin-bottom: 10px;
 	margin-top: 0;
 }
-.main-sidebar .single-post .content h5 a:hover{
+.main-sidebar .single-post .post-content h5 a:hover{
 	color:#1A76D1;
 }
-.main-sidebar .single-post .content .comment li{
+.main-sidebar .single-post .post-content .comment li{
 	color:#888;
 	display:inline-block;
 	margin-right:15px;
 	font-weight:400;
 	font-size:14px;
 }
-.main-sidebar .single-post .content .comment li:last-child{
+.main-sidebar .single-post .post-content .comment li:last-child{
 	margin-right:0;
 }
-.main-sidebar .single-post .content .comment li i{
+.main-sidebar .single-post .post-content .comment li i{
 	display:inline-block;
 	margin-right:5px;
 }
