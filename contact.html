@@ -1,19 +1,31 @@
-<!doctype html>
+!doctype html>
 <html class="no-js" lang="zxx">
     <head>
         <!-- Meta Tags -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="keywords" content="Site keywords here">
-		<meta name="description" content="">
-		<meta name='copyright' content=''>
+		<meta name="description" content="A website for URPHSA - Public Health Student Association">
+		<meta name = "author" content = "HAphrodis" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta property="og:url" content="https://urphsa.org" />
+		<meta property="og:image" content="Screenshot.PNG" />
+		<meta property="og:type" content="website" />
+		
+
 		
 		<!-- Title -->
         <title>UR-Public Health Student Association</title>
 		
-		<!-- Favicon -->
-        <link rel="icon" href="img/logo.jpg">
+		<!--flavicon-->
+		<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_package_v0.16/apple-touch-icon.png">
+		<link rel="shortcut icon" href="./images/favicon_package_v0.16/favicon.ico" type="image/x-icon">
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_package_v0.16/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_package_v0.16/favicon-16x16.png">
+		<link rel="manifest" href="./images/favicon_package_v0.16/site.webmanifest">
+		<link rel="mask-icon" href="./images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+			</head>
 		
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
@@ -36,6 +48,8 @@
         <link rel="stylesheet" href="css/animate.min.css">
 		<!-- Magnific Popup CSS -->
         <link rel="stylesheet" href="css/magnific-popup.css">
+		<!--accordion-->
+		<link rel="stylesheet" href="css/accordion.css">
 		
 		<!-- Medipro CSS -->
         <link rel="stylesheet" href="css/normalize.css">
@@ -44,31 +58,6 @@
 		
     </head>
     <body>
-	
-		<!-- Preloader -->
-        <div class="preloader">
-        
-                <div class="load"> 
-                   <!-- partial:index.partial.html -->
-<svg class="pl" viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-	<defs>
-		<linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
-			<stop offset="0%" stop-color="hsl(313,90%,55%)" />
-			<stop offset="100%" stop-color="hsl(223,90%,55%)" />
-		</linearGradient>
-		<linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
-			<stop offset="0%" stop-color="hsl(313,90%,55%)" />
-			<stop offset="100%" stop-color="hsl(223,90%,55%)" />
-		</linearGradient>
-	</defs>
-	<circle class="pl__ring" cx="100" cy="100" r="82" fill="none" stroke="url(#pl-grad1)" stroke-width="36" stroke-dasharray="0 257 1 257" stroke-dashoffset="0.01" stroke-linecap="round" transform="rotate(-90,100,100)" />
-	<line class="pl__ball" stroke="url(#pl-grad2)" x1="100" y1="18" x2="100.01" y2="182" stroke-width="36" stroke-dasharray="1 165" stroke-linecap="round" />
-</svg>
-<!-- partial -->
-                </div>
-            </div>
-        </div>
-        <!-- End Preloader -->
 		
 		<!-- Get Pro Button -->
 		<ul class="pro-features">
@@ -81,35 +70,13 @@
 			<li><i class="ri-checkbox-circle-fill"></i>Wash and Environment Program</li>
 			<li><i class="ri-checkbox-circle-fill"></i>Nutrition Program.</li></ul>
 			<div class="button">
-				<a href="contact.html" target="_blank" class="btn">Work With us</a>
+				<a href="contact.html"  class="btn">Work With us</a>
 			</div>
 		</ul>
 	
 		<!-- Header Area -->
 		<header class="header" >
-			<!-- Topbar -->
-			<div class="topbar">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6 col-md-5 col-12">
-							<!-- Contact -->
-							<ul class="top-link">
-								<li ><b>“Better health aspirers, better future achievers”</b></li>
-							</ul>
-							<!-- End Contact -->
-						</div>
-						<div id="phone" class="col-lg-6 col-md-7 col-12">
-							<!-- Top Contact -->
-							<ul class="top-contact">
-								<li><i class="fa fa-phone"></i><a href="tel:0784343073">+250 784 343 073</a></li>
-								<li><i class="fa fa-envelope"></i><a href="mailto:urphs.association@gmail.com">urphs.association@gmail.com</a></li>
-							</ul>
-							<!-- End Top Contact -->
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Topbar -->
+	
 			<!-- Header Inner -->
 			<div class="header-inner">
 				<div class="container">
@@ -292,10 +259,10 @@
 						<p>UR_PHSA is a student organization under University of Rwanda that build capacity and competency of Students.</p>
 						<!-- Social -->
 						<ul class="social">
-							<li><a href="#"><i class="icofont-twitter"></i></a></li>
-							<li><a href="#"><i class="icofont-linkedin"></i></a></li>
-							<li><a href="#"><i class="icofont-brand-whatsapp"></i></a></li>
-							<li><a href="#"><i class="icofont-email"></i></a></li>
+							<ul class="social">
+								<li><a href="https://x.com/urphsa?s=09"><i class="icofont-twitter"></i></a></li>
+								<li><a href="mailto:urphs.association@gmail.com"><i class="icofont-email"></i></a></li>
+							</ul>
 						</ul>
 						<!-- End Social -->
 					</div>
