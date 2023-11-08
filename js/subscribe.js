@@ -1,39 +1,44 @@
-// Assuming you have an input field with id "email" for email input
-const emailInput = document.getElementById("email");
-const form = document.getElementById("convertkit-form");
+document.getElementById('convertkit-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the default form submission
+  
+  const emailInput = document.querySelector('.common-input').value;
+  const formId = '5534968'; // Replace with your actual ConvertKit form ID
+  const apiKey = 'P0oWAiAmJiX_vkmZRgK8aw'; // Replace with your ConvertKit API key
+  
+  const data = {
+    email: emailInput,
+    api_key: apiKey,
+    tags: [], // You can add tags if needed
+  };
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault(); // Prevent the form from submitting in the default way
-
-  const email = emailInput.value; // Get the email value from the input field
-
-  const API_KEY = "YBxrVYBVLNbIEVu4Qgo1ag";
-  const FORM_ID = "5693494";
-
-  setLoading(true);
-
-  axios
-    .post(`https://api.convertkit.com/v3/forms/${FORM_ID}/subscribe`, {
-      api_key: API_KEY,
-      email: email, // Pass the email variable here
-    })
-    .then((response) => {
-      console.log("Email sent successfully!");
-      emailInput.value = ""; // Resetting the email input field after successful submission
-      setLoading(false);
-      setSubscribed(true);
-
-      setTimeout(() => {
-        setSubscribed(false);
-      }, 3000);
-    })
-    .catch((error) => {
-      console.error("Error sending email:", error);
-      setErrorMessage("Error occurred. Please try again!");
-      setLoading(false);
-
-      setTimeout(() => {
-        setErrorMessage("");
-      }, 3000);
-    });
+  fetch(`https://api.convertkit.com/v3/forms/${formId}/subscribe`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  })
+  .then(response => response.json())
+  .then(result => {
+    if (result.subscription.state === 'active') {
+      document.getElementById('success-message').textContent = 'Subscription successful!';
+      document.getElementById('error-message').textContent = '';
+      setTimeout(function() {
+        document.getElementById('success-message').textContent = '';
+      }, 5000); // Clear success message after 5 seconds
+    } else {
+      document.getElementById('error-message').textContent = 'Subscription failed. Please try again later.';
+      document.getElementById('success-message').textContent = '';
+      setTimeout(function() {
+        document.getElementById('error-message').textContent = '';
+      }, 5000); // Clear error message after 5 seconds
+    }
+  })
+  .catch(error => {
+    document.getElementById('error-message').textContent = 'An error occurred. Please try again later.';
+    document.getElementById('success-message').textContent = '';
+    setTimeout(function() {
+      document.getElementById('error-message').textContent = '';
+    }, 5000); // Clear error message after 5 seconds
+  });
 });
