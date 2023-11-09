@@ -2325,7 +2325,7 @@ PopUp Style
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
 	border-radius: 8px;
 }
-.main-sidebar .single-widget .title {
+.main-sidebar .single-widget .post-title {
 	position: relative;
 	font-size: 18px;
 	font-weight: 600;
@@ -2334,8 +2334,9 @@ PopUp Style
 	display: block;
 	background: #fff;
 	padding-left: 12px;
+	color: #1A76D1;
 }
-.main-sidebar .single-widget .title::before {
+.main-sidebar .single-widget .post-title::before {
 	position: absolute;
 	content: "";
 	left: 0;

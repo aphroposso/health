@@ -15,7 +15,7 @@
 
 		
 		<!-- Title -->
-        <title>UR-Public Health Student Association</title>
+        <title>UR-PHSA Blog</title>
 		
 		<!--flavicon-->
 		<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_package_v0.16/apple-touch-icon.png">
@@ -322,14 +322,14 @@
 							<!-- Single Widget -->
 							<div class="single-widget search">
 								<div class="form">
-									<input type="email" placeholder="Search Here...">
+									<input class="search" name="search" placeholder="Search Here..." onkeyup="search_blog()" type="text">
 									<a class="button" href="#"><i class="fa fa-search"></i></a>
 								</div>
 							</div>
 							<!--/ End Single Widget -->
 							<!-- Single Widget -->
 							<div class="single-widget category">
-								<h3 class="title">Blog Categories</h3>
+								<h3 class="post-title">Blog Categories</h3>
 								<ul class="categor-list">
 									<li><a href="programs.html"><i class="icofont-check-circled"></i></i>Non-communicable and communicable diseases Program.</a></li>
 									<li><a href="programs.html"><i class="icofont-check-circled"></i></i>Environmental and Wash Program.</a></li>
@@ -339,7 +339,7 @@
 							<!--/ End Single Widget -->
 							<!-- Single Widget -->
 							<div class="single-widget recent-post">
-								<h3 class="title">Recent post</h3>
+								<h3 class="post-title">Recent post</h3>
 								<!-- Single Post -->
 								<div class="single-post">
 									<div class="image">
@@ -518,5 +518,6 @@
 			<!--contacts-->
 			<script src="js/contact.js"></script>
 			<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+			<script src="js/search.js"></script>
 		</body>
 	</html>
