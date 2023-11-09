@@ -1,9 +1,14 @@
-const body = document.querySelector("main-sidebar"),
-      searchToggle = document.querySelector(".search");
-
-// js code to toggle search box
-        search.addEventListener("click" , () =>{
-        search.classList.toggle("active");
-      });
-
-
+function search() {
+  var earth = document.getElementById("empower");
+  var wind = document.getElementById("assembly");
+  var fire = document.getElementById("breastfed");
+  var searchItem = document.getElementById("searchInfo").value;
+  if (searchItem === "empower") {
+    earth.style.display = "block";
+  } else if (searchItem === "assembly") {
+    wind.style.display = "block";
+  } else if (searchItem === "breastfed") {
+    fire.style.display = "block";
+  } else
+    alert("It is not included" + searchItem);
+}
