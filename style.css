@@ -2504,6 +2504,16 @@ PopUp Style
 .news-single {
 	padding: 60px 0 90px;
 	background: #f8f8f8;
+
+}
+.slider-ctr{
+	content: "";
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
 }
 .news-single .single-main {
 	margin-top: 30px;
